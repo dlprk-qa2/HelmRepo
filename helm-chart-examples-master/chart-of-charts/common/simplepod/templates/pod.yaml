@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: {{  sha1sum "Hello world!" }}
+  name: {{  sha1sum "Hello world!123" }}
 spec:
   containers:
   - image: busybox
