@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: '{{- printf "%s-%s-%s" .Release.Name .Chart.Name ( .Values.parent | default "base" ) | trunc 63 | trimSuffix "-" -}}'
+  name: '{{- printf "%s-%s-%s" .Release.Name .Chart.Name ( .Values.parent | default "base11" ) | trunc 63 | trimSuffix "-" -}}'
 spec:
   containers:
   - image: busybox
